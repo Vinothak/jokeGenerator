@@ -1,0 +1,204 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+p.impact {
+  
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: large;
+  color:purple;
+  
+}
+
+#quotes{
+ height: 100px;
+ width: 350px;
+ background-color: salmon;
+ padding-left: 20px;
+ padding-right: 3px;
+ border-radius: 20px;
+ font-size: large;
+ margin: 0;
+ margin-top: 10px;
+ margin-left:5px;
+ padding-top: 10px;;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color:greenyellow;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+  border-radius: 20px;
+}
+
+#showAnswer {
+  visibility: visible;
+  min-width: 250px;
+  margin-left: -115px;
+  background-color:greenyellow;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 100px;
+  font-size: 17px;
+  border-radius: 20px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s;
+  animation: fadein 0.5s;
+}
+#snackbar.hide {
+  visibility: hidden;
+  -webkit-animation: fadeout 0.5s 2.5s;
+  animation: fadeout 0.5s 2.5s;
+}
+#showAnswer.show {
+  visibility: visible;
+  -webkit-animation: fadein2 0.5s;
+  animation: fadein2 0.5s;
+}
+#impact.show {
+  visibility: visible;
+  -webkit-animation: fadein3 0.1s;
+  animation: fadein3 0.5s;
+}
+#impact.hide {
+  visibility: hidden;
+  -webkit-animation: fadeout3 0.5s 2.5s;
+  animation: fadeout3 0.5s 2.5s;
+}
+#showAnswer.hide {
+  visibility: hidden;
+  -webkit-animation: fadeout2 0.5s 2.5s;
+  animation: fadeout2 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {left: 0; opacity: 0;} 
+  to {left: 50%; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {left: 0; opacity: 0;}
+  to {left: 50%; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {left: 50%; opacity: 1;} 
+  to {left: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {left: 50%; opacity: 1;}
+  to {left: 0; opacity: 0;}
+}
+@-webkit-keyframes fadein2 {
+  from {bottom: 0; opacity: 0;} 
+  to {right: 700px; opacity: 1;}
+}
+
+@keyframes fadein2 {
+  from {bottom: 0; opacity: 0;}
+  to {right: 750px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout2 {
+  from {right: 700px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout2 {
+  from {right: 700px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+@-webkit-keyframes fadein3 {
+  from {bottom: 0; opacity: 0;} 
+  to {right: 700px; opacity: 1;}
+}
+
+@keyframes fadein3 {
+  from {bottom: 0; opacity: 0;}
+  to {right: 750px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout3 {
+  from {right: 700px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout3 {
+  from {right: 700px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+.panel{
+width: 450px;
+height: 400px;
+border-radius: 10px;
+background-color: white;
+margin:auto;
+margin-bottom:10px;
+}
+body{
+background-color: aqua;
+}
+
+#impact{
+  padding-top: 5px;
+ width:250px;
+ height:80px;
+ background-color: springgreen;
+ margin-left: auto;
+ margin-top: 20px;
+ margin-right: 5px;
+ border-radius: 30px;
+}
